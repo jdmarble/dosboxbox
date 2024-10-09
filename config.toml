@@ -1,0 +1,4 @@
+[[customizations.user]]
+name = "dosbox"
+password = "password"
+groups = ["wheel"]
