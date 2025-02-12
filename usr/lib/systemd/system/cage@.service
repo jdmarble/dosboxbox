@@ -22,9 +22,9 @@ After=getty@%i.service
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/cage -s /usr/bin/dosbox
+ExecStart=/usr/bin/cage -s /usr/bin/86Box
 Restart=always
-User=dosbox
+User=user
 # Log this user with utmp, letting it show up with commands 'w' and
 # 'who'. This is needed since we replace (a)getty.
 UtmpIdentifier=%I
