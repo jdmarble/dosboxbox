@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora-bootc:40
+FROM quay.io/fedora/fedora-bootc:41
 
 COPY /etc/dnf /etc/dnf
 
@@ -13,4 +13,4 @@ COPY /etc/ /etc/
 COPY /usr/ /usr/
 COPY /var/ /var/
 
-RUN ln -s /usr/lib/systemd/system/cage@.service /usr/lib/systemd/system/graphical.target.wants/cage@tty7.service
+RUN ln -s /usr/lib/systemd/system/cage@.service /usr/lib/systemd/system/graphical.target.wants/cage@tty1.service

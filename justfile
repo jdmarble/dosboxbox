@@ -36,5 +36,6 @@ qemu-test: qcow2
         -cpu host \
         -smp 2 \
         -m 2048 \
+        -vga std \
         -serial stdio \
         -snapshot output/qcow2/disk.qcow2
