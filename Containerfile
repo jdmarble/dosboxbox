@@ -13,4 +13,4 @@ COPY /etc/ /etc/
 COPY /usr/ /usr/
 COPY /var/ /var/
 
-RUN ln -s /usr/lib/systemd/system/cage@.service /usr/lib/systemd/system/graphical.target.wants/cage@tty1.service
+RUN ln -s /usr/lib/systemd/system/cage@.service /usr/lib/systemd/system/multi-user.target.wants/cage@tty1.service
