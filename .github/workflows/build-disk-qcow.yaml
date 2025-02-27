@@ -35,7 +35,6 @@ jobs:
         sudo podman pull ghcr.io/jdmarble/dosboxbox:latest
         sudo podman run \
           --rm \
-          -it \
           --privileged \
           --pull=newer \
           --security-opt label=type:unconfined_t \
@@ -43,10 +42,10 @@ jobs:
           -v ./output:/output \
           -v /var/lib/containers/storage:/var/lib/containers/storage \
           quay.io/centos-bootc/bootc-image-builder:latest \
+          --progress verbose \
           --target-arch amd64 \
           --type qcow2 \
           --rootfs xfs \
-          --local \
           ghcr.io/jdmarble/dosboxbox:latest
 
     - name: Rename output file
